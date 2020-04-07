@@ -20,4 +20,4 @@ app.use('/', apiRoutes());
 
 app.listen(PORT, () => {
   console.log(chalk.magenta('autoSERV'),`ascension initalization complete, now listening on PORT: ${PORT}`);
-})
+});
