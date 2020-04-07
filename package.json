@@ -2,9 +2,11 @@
   "name": "autoSERV",
   "version": "1.0.0",
   "description": "API serving start-up code for all things Web Developer",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node src/index.js",
+    "start": "./node_modules/.bin/nodemon -L src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "chalk": "^4.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.2"
   }
 }
