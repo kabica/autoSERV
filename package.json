@@ -1,0 +1,27 @@
+{
+  "name": "autoSERV",
+  "version": "1.0.0",
+  "description": "API serving start-up code for all things Web Developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabica/autoSERV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabica/autoSERV/issues"
+  },
+  "homepage": "https://github.com/kabica/autoSERV#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
