@@ -5,6 +5,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 8080;
 const ENV = process.env.ENV || "development";
 
+const cors = require("cors");
 const chalk = require('chalk');
 const morgan     = require('morgan');
 const express    = require("express");
@@ -12,6 +13,7 @@ const bodyParser = require("body-parser");
 const apiRoutes = require('../apiRoutes');
 
 const app = express();
+app.use(cors());
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
